@@ -7,7 +7,7 @@ Instructions for running the project.
 2. Make sure Nmap command can be executed on the terminal without sudo. 
 For that,
 Type "sudo visudo" on a terminal. 
-Add "<user> ALL=NOPASSWD: /usr/local/bin/nmap" at the end of the file.
+Add "yourusername ALL=NOPASSWD: /usr/local/bin/nmap" at the end of the file.
 
 3. Download and install JavaSE 1.8 jdk and Apache Tomcat v8.
 
@@ -15,12 +15,13 @@ Add "<user> ALL=NOPASSWD: /usr/local/bin/nmap" at the end of the file.
 
 5. Assuming MySQL is already installed, execute the following commands.
    
-   Database Creation:
+   ---> For Database Creation
 
    create database neon;
+   
    use neon;
 
-   Table Creation:
+   ---> For Table Creation:
 
    create table scan_time(
 					   scan_id INT NOT NULL AUTO_INCREMENT,
@@ -40,7 +41,7 @@ Add "<user> ALL=NOPASSWD: /usr/local/bin/nmap" at the end of the file.
                            ON DELETE CASCADE
 	)ENGINE=INNODB;
 
-	Index Creation:
+   ---> For Index Creation:
 
 	Alter table scan_time
 	add index idx_ipsweep (ip, sweep_number);
