@@ -1,5 +1,9 @@
 # ProjectNeon_NmapScanner
 
+Description:
+
+This is a web application that takes a hostname/ip from the user, scans the ports in the host and returns a list of open ports, previous history of scans on that host, as well as changes after the previous scan. Nmap command line tool is used for scanning the host. MySQL is used for storing the history of scans for a given host. 
+
 Instructions for running the project.
 
 1. Download and install Nmap. Link for Mac --> https://nmap.org/download.html#macosx
