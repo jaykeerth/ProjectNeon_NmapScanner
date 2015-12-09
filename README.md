@@ -14,6 +14,7 @@ Add "<user> ALL=NOPASSWD: /usr/local/bin/nmap" at the end of the file.
 4. Copy ProjectNeon.war file into /Library/Tomcat/webapps/
 
 5. Assuming MySQL is already installed, execute the following commands.
+   
    Database Creation:
 
    create database neon;
